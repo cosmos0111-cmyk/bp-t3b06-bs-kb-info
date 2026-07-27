@@ -1,296 +1,73 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="midnight" data-build="1a2b3c4d">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>발산 노래방 정보 – 상세 분석 및 이용 가이드</title>
-    <meta name="description" content="발산 노래방 정보 전문 페이지. 업계 최고 시설, 검증된 시스템, 신뢰할 수 있는 데이터 기반의 정밀 분석으로 최적의 가라오케 경험을 안내합니다. 010-6279-0862.">
-    <meta name="keywords" content="발산 노래방 정보, 발산 노래방 시설, 발산 노래방 시스템, 발산 가라오케 분석, 발산 노래방 이용 가이드, 발산 업소 정보, 발산 노래방 추천, 발산 노래방 예약">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://t3b06-bs-kb-info.vercel.app/">
-    <!-- PBN 메타 -->
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <!-- OG 메타 -->
-    <meta property="og:title" content="발산 노래방 정보 – 상세 분석 및 이용 가이드">
-    <meta property="og:description" content="업계 최고 시설, 검증된 시스템, 신뢰할 수 있는 데이터 기반의 정밀 분석으로 최적의 가라오케 경험을 안내합니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b06-bs-kb-info.vercel.app/">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="발산 노래방 정보">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="발산 노래방 정보 – 상세 분석 및 이용 가이드">
-    <meta name="twitter:description" content="업계 최고 시설, 검증된 시스템, 신뢰할 수 있는 데이터 기반의 정밀 분석으로 최적의 가라오케 경험을 안내합니다.">
-    <style>
-        /* RESET & BASE – brutalist raw */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 18px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Arial', 'Helvetica', sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-        /* TYPOGRAPHY – oversized, raw */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 900;
-            line-height: 1.1;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            color: #fff;
-        }
-        h1 {
-            font-size: clamp(2.5rem, 10vw, 5rem);
-            margin-bottom: 0.4em;
-        }
-        h2 {
-            font-size: clamp(2rem, 7vw, 3.5rem);
-            margin-bottom: 0.5em;
-            border-left: 6px solid #ff0055;
-            padding-left: 0.5em;
-        }
-        h3 {
-            font-size: clamp(1.4rem, 5vw, 2.2rem);
-            margin-bottom: 0.6em;
-        }
-        p, li, blockquote, figcaption {
-            font-size: 1rem;
-            margin-bottom: 1.2em;
-            max-width: 75ch;
-        }
-        a {
-            color: #ff0055;
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.2s;
-        }
-        a:hover, a:focus-visible {
-            border-bottom-color: #ff0055;
-            outline: none;
-        }
-        strong, b {
-            color: #ff0055;
-            font-weight: 900;
-        }
-        /* LAYOUT – brutalist grid */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        /* 헤더 */
-        header {
-            background: #111;
-            border-bottom: 3px solid #ff0055;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #ff0055;
-            letter-spacing: -0.05em;
-            text-transform: uppercase;
-        }
-        .logo a {
-            color: inherit;
-            border: none;
-        }
-        nav {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-        nav a {
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            padding: 0.3em 0;
-            border-bottom: 2px solid transparent;
-        }
-        nav a:hover, nav a.active {
-            border-bottom-color: #ff0055;
-        }
-        .tel-link {
-            display: inline-block;
-            background: #ff0055;
-            color: #0a0a0a !important;
-            padding: 0.4em 1.2em;
-            font-weight: 900;
-            border-radius: 2px;
-            border: none !important;
-            transition: background 0.2s;
-        }
-        .tel-link:hover {
-            background: #cc0044;
-        }
-        /* 히어로 */
-        .hero {
-            padding: 4rem 0;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
-            border-bottom: 3px solid #ff0055;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: clamp(2.8rem, 12vw, 6rem);
-            margin-bottom: 0.2em;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin: 0 auto 1.5em;
-            color: #aaa;
-        }
-        /* 카드 그리드 */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-            padding: 3rem 0;
-        }
-        .card {
-            background: #151515;
-            border: 2px solid #2a2a2a;
-            padding: 1.5rem;
-            transition: border-color 0.3s, transform 0.2s;
-        }
-        .card:hover {
-            border-color: #ff0055;
-            transform: translateY(-4px);
-        }
-        .card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.8em;
-        }
-        .card p {
-            font-size: 0.95rem;
-            color: #bbb;
-        }
-        /* FAQ */
-        .faq-section {
-            padding: 3rem 0;
-            background: #0d0d0d;
-        }
-        .faq-item {
-            border-bottom: 1px solid #2a2a2a;
-            padding: 1.2rem 0;
-        }
-        .faq-question {
-            font-weight: 900;
-            font-size: 1.1rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #fff;
-        }
-        .faq-answer {
-            margin-top: 0.8rem;
-            color: #aaa;
-        }
-        /* 푸터 */
-        footer {
-            background: #111;
-            border-top: 3px solid #ff0055;
-            padding: 2rem 0;
-            text-align: center;
-            color: #888;
-        }
-        footer a {
-            color: #ff0055;
-        }
-        /* 반응형 */
-        @media (max-width: 768px) {
-            .header-inner {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-            }
-            .hero h1 {
-                font-size: clamp(2rem, 10vw, 3.5rem);
-            }
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<title>정보</title>
+<meta name="description" content="발산 지역 노래방을 처음 이용하는 사용자를 위해 시설 특징, 이용 절차, 요금 체계 및 연장·조기 종료 정책을 상세히 안내합니다.">
+<meta name="keywords" content="발산 노래방, 노래방 상세 정보, 발산 노래방 이용 안내, 노래방 요금 정산, 노래방 연장 정책">
+<link rel="canonical" href="https://balsan-song-room.program-school.online/about.html">
+<meta property="og:title" content="발산 노래방 정보 — 상세 안내">
+<meta property="og:description" content="발산 지역 노래방의 시설 사양, 서비스 옵션, 요금 계산 방식 및 이용 시 유의사항을 전문가 시각에서 정리했습니다.">
+<meta property="og:url" content="https://balsan-song-room.program-school.online/about.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <div class="logo"><a href="/">발산 노래방 정보</a></div>
-            <nav>
-                <a href="/">홈</a>
-                <a href="/info/" class="active">정보</a>
-                <a href="/system/">시스템</a>
-                <a href="/reservation/">예약</a>
-                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
-            </nav>
-        </div>
-    </header>
+<header>
+  <nav>
+    <a href="/index.html">홈</a>
+    <a href="/info.html">정보</a>
+    <a href="/guide.html">이용 가이드</a>
+    <a href="/contact.html">연락처</a>
+  </nav>
+</header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>발산 노래방 정보</h1>
-            <p>데이터 기반 정밀 분석으로 검증된 발산 노래방의 모든 것 — 시설, 시스템, 이용 전략까지 한눈에 파악하십시오.</p>
-        </div>
-    </section>
+<section class="v-box-isfz" data-v="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <h1>발산 노래방 상세 정보</h1>
+  <p>본 페이지는 발산 지역에 위치한 대표적인 노래방의 전반적인 서비스를 체계적으로 정리하여, 첫 방문 고객이 사전에 반드시 확인해야 할 사항들을 한눈에 파악할 수 있도록 설계되었습니다.</p>
+</section>
 
-    <main>
-        <div class="container">
-            <div class="grid">
-                <div class="card">
-                    <h3>시설 상세</h3>
-                    <p>발산역 도보 3분 거리, 총 12개 룸 (대형 3실 / 중형 5실 / 스몰 4실). 모든 룸에 75인치 4K 스크린, JBL 사운드, 방음 3중 구조 적용. 조명은 RGB 커스터마이징 가능.</p>
-                </div>
-                <div class="card">
-                    <h3>반주 시스템</h3>
-                    <p>최신 TJ미디어 K1000 + 금영 KES-2000 듀얼 시스템. 18만 곡 이상 수록, 매월 업데이트. AI 음정 분석 및 리얼타임 에코 컨트롤 탑재.</p>
-                </div>
-                <div class="card">
-                    <h3>이용 가이드</h3>
-                    <p>주중 15% 할인, 단체 (4인 이상) 20% 할인. 예약 필수 (특히 주말). 기본 2시간 패키지, 추가 30분 단위 연장 가능. 무료 음료 바 및 간식 제공.</p>
-                </div>
-                <div class="card">
-                    <h3>지역 시그널</h3>
-                    <p>서울 강서구 발산동 중심, 지하철 5호선 발산역 3번 출구에서 200m. 주차장 30대 가능 (무료 2시간). 주변 맛집, 카페와 제휴 할인 혜택.</p>
-                </div>
-            </div>
+<main>
+  <section data-v="overview">
+    <h2>시설 특징 및 환경</h2>
+    <p>발산 노래방은 최신 음향 설비와 방음 처리된 전용 부스 30여 개를 보유하고 있어, 개인·소규모 그룹 모두에게 최적의 실내 환경을 제공합니다. 각 부스는 LED 조명과 자동 온도 조절 시스템을 갖추고 있어, 이용 시간대와 관계없이 일정한 쾌적함을 유지합니다.</p>
+    <p>공용 라운지 공간에는 실시간 순위표와 최신 팝송 차트 화면이 설치되어 있어, 대기 중에도 최신 트렌드를 확인할 수 있습니다. 또한, 고속 Wi‑Fi와 충전 포트가 전 좌석에 구비되어 있어, 스마트폰·태블릿을 활용한 가사 검색 및 녹음이 원활합니다.</p>
+  </section>
 
-            <h2>핵심 수치</h2>
-            <p>발산 지역 120여개 노래방 업소 중 최상위 5% 시설 보유 (2024년 자체 조사 기준). 고객 만족도 96.8%, 재방문율 73.2%. 평균 음향 레벨 85dB±3, 반주 정확도 99.2%.</p>
+  <section data-v="pricing">
+    <h2>요금 체계 및 정산 방식</h2>
+    <p>시간당 기본 요금은 10,000원이며, 인원수와 이용 목적에 따라 차등 적용되는 부가 옵션이 존재합니다. 1인 이용 시 기본 요금만 적용되지만, 4인 이상 그룹 이용 시 10% 할인이 자동 적용됩니다.</p>
+    <p>정산은 입장 시 선결제 방식으로 진행되며, 실시간 사용량에 따라 자동으로 차감되는 시스템을 채택하고 있습니다. 이용 종료 직후 최종 사용 시간을 확인하고, 차감된 금액 이외의 잔액이 남을 경우 현금 또는 포인트 형태로 환불이 가능합니다.</p>
+  </section>
 
-            <h2>시스템 아키텍처</h2>
-            <p>모든 룸은 독립적인 네트워크 기반 제어 시스템을 갖추었습니다. 마이크는 Sennheiser EW-D 직렬, 리버브는 TC Helicon Voicelive3. AV 룸 별도 운영 (유튜브, 넷플릭스, 게임기 연결 가능).</p>
+  <section data-v="extension">
+    <h2>연장·조기 종료 정책</h2>
+    <p>예정된 이용 시간이 종료될 경우, 추가 15분 단위로 연장 신청이 가능합니다. 연장 시에는 기존 요금에 15분당 2,500원의 추가 요금이 부과되며, 최소 30분 단위로만 결제됩니다. 연장 신청은 부스 내부 터치스크린 또는 모바일 앱을 통해 즉시 처리됩니다.</p>
+    <p>조기 종료를 선택할 경우, 남은 이용 시간에 비례한 금액이 포인트 형태로 반환됩니다. 반환 포인트는 다음 방문 시 동일한 서비스에 재사용 가능하도록 설계되어, 고객의 재방문 유인을 높이고 있습니다.</p>
+  </section>
 
-            <h2>이용 전략</h2>
-            <p><strong>최적 시간:</strong> 주중 18:00~20:00 (골든타임 할인). <strong>룸 선택:</strong> 4인 이하 스몰, 8인 이하 중형, 12인 이하 대형 추천. <strong>팁:</strong> 사전에 곡 리스트 준비 시 15분 추가 시간 제공.</p>
-        </div>
+  <section data-v="usage-guidelines">
+    <h2>이용 시 유의사항</h2>
+    <p>모든 이용자는 입장 시 신분증 확인 절차를 거쳐야 하며, 부스 내에서는 음량 제한을 초과하지 않도록 주의해야 합니다. 또한, 부스 내 음식·음료 반입은 금지되어 있으며, 제공되는 미니 바를 이용해 주시기 바랍니다.</p>
+    <p>노래 선택은 터치스크린 UI를 통해 진행되며, 최신곡 업데이트가 매주 이루어집니다. 특정 곡이 제공되지 않을 경우, 직원에게 요청하면 별도 주문 절차를 통해 추가가 가능합니다.</p>
+  </section>
 
-        <section class="faq-section">
-            <div class="container">
-                <h2>자주 묻는 질문</h2>
-                <div class="faq-item">
-                    <div class="faq-question">예약은 어떻게 하나요? <span>+</span></div>
-                    <div class="faq-answer">전화(010-6279-0862) 또는 사이트 예약 폼을
+  <section data-v="faq">
+    <h2>자주 묻는 질문</h2>
+    <h3>Q1. 그룹 이용 시 최소 인원 수는 어떻게 되나요?</h3>
+    <p>A1. 그룹 이용은 최소 2인부터 가능하나, 4인 이상 일 경우 인당 요금이 자동으로 할인됩니다. 6인 이상 예약 시 전용 대형 부스를 별도 배정해 드립니다.</p>
+    <h3>Q2. 야간 이용 시간대에 추가 요금이 발생하나요?</h3>
+    <p>A2. 야간(22:00~06:00) 이용 시 시간당 기본 요금에 20% 가산 요금이 적용됩니다. 다만, 사전 예약을 통해 할인 쿠폰을 적용받을 경우 해당 가산 요금을 차감받을 수 있습니다.</p>
+    <h3>Q3. 어린이 동반 이용에 제한이 있나요?</h3>
+    <p>A3. 12세 이하 어린이는 보호자와 동반 시에만 이용이 가능하며, 전용 어린이 부스는 별도로 마련되어 있지 않으므로 보호자와 함께 같은 부스를 사용해야 합니다.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 발산 노래방. All rights reserved.</p>
+</footer>
 </body>
 </html>
